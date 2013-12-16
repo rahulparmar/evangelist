@@ -3,3 +3,5 @@
 Gemfile.lock
 _site/
 bower_components/
+
+.DS_Store
