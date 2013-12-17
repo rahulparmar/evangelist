@@ -8,21 +8,31 @@
 	font-family: 'Abel';
 	font-size: 1.5em;
 }
-#hero{
+.hero{
 	background-image: url('/img/hero.jpeg');
 	width: 100%;
-	height: 500px;
+	height: 100vh;
 	text-align: center;
-	padding: 100px;
+	margin: 0 auto;
 }
 #title-text{
 	font-size: 3em;
 	text-transform: uppercase;
 	font-family: 'Abel';
-	color: #ffffff;	
+	color: #ffffff;
 }
-#description{
-	font-size: 2em;
+.hero:before, .description{
+	font-size: 3em;
 	color: #ffffff;
 	font-family: 'Abel';
+	display: inline-block;
+	vertical-align: middle;
+}
+.hero:before{
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 100vh;
+	vertical-align: middle;
+	margin-left: -0.25em
 }
