@@ -10,19 +10,35 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
         {% stylesheet app %}
         {% stylesheet includes %}
         {% javascript app %}
 
-    </head>
-    <body>
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Abel|Quicksand|Josefin+Sans|Open+Sans+Condensed:300|Raleway|Marvel|Julius+Sans+One' rel='stylesheet' type='text/css'>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+    </head>
+
+    <body>
+      
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#" class = "title">{{site.name}}</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active" id="nav-link"><a href="#">How It Works</a></li>
+      <li class="active" id="nav-link"><a href="#">FAQ</a></li>
+      <li class="active" id="nav-link"><a href="#">About Us</a></li>
+      <li class="active" id="nav-link"><a href="#">Contact</a></li>
+    </ul>
+  </section>
+  </nav>
+
 
           {{ content }}
 
